@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Items</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Add an image here -->
+        <img src="mama-adas-kitchen.jpg" alt="Mama Ada's Kitchen Logo" class="logo">
+        <h1>MAMA ADA'S KITCHEN</h1>
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="item1">Item 1: Wayke</label>
+                <input type="number" id="item1" name="item1" min="0" placeholder="Quantity">
+            </div>
+            <div class="form-group">
+                <label for="item2">Item 2: Shito</label>
+                <input type="number" id="item2" name="item2" min="0" placeholder="Quantity">
+            </div>
+            <div class="form-group">
+                <label for="item3">Item 3: Wayke & Kelewele</label>
+                <input type="number" id="item3" name="item3" min="0" placeholder="Quantity">
+            </div>
+            <button type="submit">Place Order</button>
+        </form>
+        <div id="confirmation" class="hidden">
+            <h2>Thank you for your order!</h2>
+            <p>Your order has been received.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
