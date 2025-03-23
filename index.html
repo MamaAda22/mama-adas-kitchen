@@ -3,27 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Items</title>
+    <title>Mama Ada's Kitchen - Menu</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <!-- Add an image here -->
         <img src="mama-adas-kitchen.jpg" alt="Mama Ada's Kitchen Logo" class="logo">
         <h1>MAMA ADA'S KITCHEN</h1>
-        <form id="orderForm">
+        <form id="orderForm" action="https://formspree.io/f/mgvavpkw" method="POST">
+            <h2>Full Pan</h2>
             <div class="form-group">
-                <label for="item1">Item 1: Wayke</label>
-                <input type="number" id="item1" name="item1" min="0" placeholder="Quantity">
+                <label for="waakye1">Waakye #1 - $17</label>
+                <p class="description">Goat Meat, Egg, Garri</p>
+                <input type="number" id="waakye1" name="waakye1" min="0" placeholder="Quantity">
             </div>
             <div class="form-group">
-                <label for="item2">Item 2: Shito</label>
-                <input type="number" id="item2" name="item2" min="0" placeholder="Quantity">
+                <label for="waakye2">Waakye #2 - $15</label>
+                <p class="description">Fish, Egg, Garri</p>
+                <input type="number" id="waakye2" name="waakye2" min="0" placeholder="Quantity">
             </div>
             <div class="form-group">
-                <label for="item3">Item 3: Wayke & Kelewele</label>
-                <input type="number" id="item3" name="item3" min="0" placeholder="Quantity">
+                <label for="waakyeDeluxe">Waakye Deluxe - $20</label>
+                <p class="description">Goat Meat, Fish, Egg, Garri, Noodles</p>
+                <input type="number" id="waakyeDeluxe" name="waakyeDeluxe" min="0" placeholder="Quantity">
             </div>
+
+            <h3>Optional Add-ons for Full Pan</h3>
+            <div class="form-group">
+                <label for="weleFull">Wele</label>
+                <input type="number" id="weleFull" name="weleFull" min="0" placeholder="Quantity">
+            </div>
+            <div class="form-group">
+                <label for="shitoFull">Side of Shito</label>
+                <input type="number" id="shitoFull" name="shitoFull" min="0" placeholder="Quantity">
+            </div>
+
+            <h2>Half Pan</h2>
+            <div class="form-group">
+                <label for="halfWaakye1">Waakye #1 - $100</label>
+                <p class="description">Goat Meat, Egg, Garri</p>
+                <input type="number" id="halfWaakye1" name="halfWaakye1" min="0" placeholder="Quantity">
+            </div>
+            <div class="form-group">
+                <label for="halfWaakye2">Waakye #2 - $90</label>
+                <p class="description">Fish, Egg, Garri</p>
+                <input type="number" id="halfWaakye2" name="halfWaakye2" min="0" placeholder="Quantity">
+            </div>
+            <div class="form-group">
+                <label for="halfWaakyeDeluxe">Waakye Deluxe - $125</label>
+                <p class="description">Goat Meat, Fish, Egg, Garri, Noodles</p>
+                <input type="number" id="halfWaakyeDeluxe" name="halfWaakyeDeluxe" min="0" placeholder="Quantity">
+            </div>
+
+            <h3>Optional Add-ons for Half Pan</h3>
+            <div class="form-group">
+                <label for="weleHalf">Wele</label>
+                <input type="number" id="weleHalf" name="weleHalf" min="0" placeholder="Quantity">
+            </div>
+            <div class="form-group">
+                <label for="shitoHalf">Side of Shito</label>
+                <input type="number" id="shitoHalf" name="shitoHalf" min="0" placeholder="Quantity">
+            </div>
+
+            <h2>Add Ons</h2>
+            <div class="form-group">
+                <label for="shitoHot">Shito (Hot/Mild)</label>
+                <select id="shitoHot" name="shitoHot">
+                    <option value="hot">Hot</option>
+                    <option value="mild">Mild</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="shitoSize">Shito Size</label>
+                <select id="shitoSize" name="shitoSize">
+                    <option value="large">Large - $15</option>
+                    <option value="medium">Medium - $12</option>
+                </select>
+            </div>
+
             <button type="submit">Place Order</button>
         </form>
         <div id="confirmation" class="hidden">
