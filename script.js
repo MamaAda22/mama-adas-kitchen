@@ -1,14 +1,20 @@
 document.getElementById('orderForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    const item1 = document.getElementById('item1').value;
-    const item2 = document.getElementById('item2').value;
-    const item3 = document.getElementById('item3').value;
+    event.preventDefault(); // Prevent the form from submitting the traditional way
 
-    if (item1 > 0 || item2 > 0 || item3 > 0) {
-        document.getElementById('orderForm').classList.add('hidden');
-        document.getElementById('confirmation').classList.remove('hidden');
-    } else {
-        alert('Please enter a quantity for at least one item.');
-    }
+    // Hide the form
+    document.getElementById('orderForm').classList.add('hidden');
+
+    // Show the confirmation message
+    document.getElementById('confirmation').classList.remove('hidden');
+});
+
+// Handle the "Click here to submit a new order" link
+document.getElementById('newOrderLink').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the link from navigating
+
+    // Show the form
+    document.getElementById('orderForm').classList.remove('hidden');
+
+    // Hide the confirmation message
+    document.getElementById('confirmation').classList.add('hidden');
 });
