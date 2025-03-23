@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
 }
 
 .container {
@@ -14,18 +14,20 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 90%; /* Adjust width to take up most of the screen */
+    max-width: 1200px; /* Set a maximum width for larger screens */
     text-align: center;
 }
 
 .logo {
-    width: 100px; /* Adjust the size as needed */
+    width: 150px; /* Increase logo size for better visibility */
     height: auto;
     margin-bottom: 20px;
 }
 
 h1 {
     margin-bottom: 20px;
+    font-size: 2.5rem; /* Increase heading size */
 }
 
 .form-group {
@@ -36,24 +38,27 @@ h1 {
 label {
     display: block;
     margin-bottom: 5px;
+    font-size: 1.2rem; /* Increase label size */
 }
 
 input, select {
     width: 100%;
-    padding: 8px;
+    padding: 10px; /* Increase padding for better touch interaction */
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 1rem; /* Increase font size */
 }
 
 button {
     background-color: #28a745;
     color: white;
-    padding: 10px 15px;
+    padding: 15px 20px; /* Increase button padding */
     border: none;
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+    font-size: 1.2rem; /* Increase button font size */
 }
 
 button:hover {
@@ -69,4 +74,29 @@ button:hover {
 .visible {
     visibility: visible;
     opacity: 1;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Increase width for smaller screens */
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+
+    label {
+        font-size: 1rem; /* Adjust label size for smaller screens */
+    }
+
+    input, select {
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+
+    button {
+        padding: 12px 15px; /* Adjust button padding for smaller screens */
+        font-size: 1rem; /* Adjust button font size for smaller screens */
+    }
 }
