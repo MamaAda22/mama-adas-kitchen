@@ -1,5 +1,3 @@
-.logo {
-    width: 100px; /* Set width to 10px */
-    height: auto; /* Let the browser adjust the height */
-    margin-bottom: 20px;
+.hidden {
+    display: none;
 }
