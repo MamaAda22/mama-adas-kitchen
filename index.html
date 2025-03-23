@@ -10,7 +10,15 @@
     <div class="container">
         <img src="mama-adas-kitchen.jpg" alt="Mama Ada's Kitchen Logo" class="logo">
         <h1>MAMA ADA'S KITCHEN</h1>
-        <form id="orderForm" action="https://formspree.io/f/mgvavpkw" method="POST">
+
+        <!-- ✅ Form with correct Formspree setup -->
+        <form id="orderForm" action="https://formspree.io/f/mgvavpkw?debug=true" method="POST">
+            <!-- ✅ Added Email Field (Required for Formspree) -->
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
             <h2>Full Pan</h2>
             <div class="form-group">
                 <label for="waakye1">Waakye #1 - $17</label>
@@ -83,6 +91,7 @@
 
             <button type="submit">Place Order</button>
         </form>
+
         <div id="confirmation" class="hidden">
             <h2>Thank you for your order!</h2>
             <p>Your order has been received.</p>
