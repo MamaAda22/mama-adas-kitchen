@@ -10,15 +10,8 @@
     <div class="container">
         <img src="mama-adas-kitchen.jpg" alt="Mama Ada's Kitchen Logo" class="logo">
         <h1>MAMA ADA'S KITCHEN</h1>
-
-        <!-- ✅ Form with correct Formspree setup -->
         <form id="orderForm" action="https://formspree.io/f/mgvavpkw?debug=true" method="POST">
-            <!-- ✅ Added Email Field (Required for Formspree) -->
-            <div class="form-group">
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
-
+            <!-- Full Pan Section -->
             <h2>Full Pan</h2>
             <div class="form-group">
                 <label for="waakye1">Waakye #1 - $17</label>
@@ -36,6 +29,7 @@
                 <input type="number" id="waakyeDeluxe" name="waakyeDeluxe" min="0" placeholder="Quantity">
             </div>
 
+            <!-- Optional Add-ons for Full Pan -->
             <h3>Optional Add-ons for Full Pan</h3>
             <div class="form-group">
                 <label for="weleFull">Wele</label>
@@ -46,6 +40,7 @@
                 <input type="number" id="shitoFull" name="shitoFull" min="0" placeholder="Quantity">
             </div>
 
+            <!-- Half Pan Section -->
             <h2>Half Pan</h2>
             <div class="form-group">
                 <label for="halfWaakye1">Waakye #1 - $100</label>
@@ -63,6 +58,7 @@
                 <input type="number" id="halfWaakyeDeluxe" name="halfWaakyeDeluxe" min="0" placeholder="Quantity">
             </div>
 
+            <!-- Optional Add-ons for Half Pan -->
             <h3>Optional Add-ons for Half Pan</h3>
             <div class="form-group">
                 <label for="weleHalf">Wele</label>
@@ -73,6 +69,7 @@
                 <input type="number" id="shitoHalf" name="shitoHalf" min="0" placeholder="Quantity">
             </div>
 
+            <!-- Add Ons Section -->
             <h2>Add Ons</h2>
             <div class="form-group">
                 <label for="shitoHot">Shito (Hot/Mild)</label>
@@ -92,9 +89,11 @@
             <button type="submit">Place Order</button>
         </form>
 
+        <!-- Confirmation Message -->
         <div id="confirmation" class="hidden">
             <h2>Thank you for your order!</h2>
             <p>Your order has been received.</p>
+            <a href="#" id="newOrderLink">Click here to submit a new order</a>
         </div>
     </div>
     <script src="script.js"></script>
