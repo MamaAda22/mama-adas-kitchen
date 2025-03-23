@@ -1,72 +1,10 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-}
-
-.logo {
-    width: 100px; /* Adjust the size as needed */
-    height: auto;
-    margin-bottom: 20px;
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input, select {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
 .hidden {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    visibility: hidden; /* Hide the element but keep its space in the layout */
+    opacity: 0; /* Make the element fully transparent */
+    transition: opacity 0.3s ease; /* Smooth transition for showing/hiding */
 }
 
 .visible {
-    visibility: visible;
-    opacity: 1;
+    visibility: visible; /* Show the element */
+    opacity: 1; /* Make the element fully visible */
 }
