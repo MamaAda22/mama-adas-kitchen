@@ -6,6 +6,7 @@ document.getElementById('orderForm').addEventListener('submit', function(event) 
 
     // Show the confirmation message
     document.getElementById('confirmation').classList.remove('hidden');
+    document.getElementById('confirmation').classList.add('visible');
 });
 
 // Handle the "Click here to submit a new order" link
@@ -14,7 +15,9 @@ document.getElementById('newOrderLink').addEventListener('click', function(event
 
     // Show the form
     document.getElementById('orderForm').classList.remove('hidden');
+    document.getElementById('orderForm').classList.add('visible');
 
     // Hide the confirmation message
     document.getElementById('confirmation').classList.add('hidden');
+    document.getElementById('confirmation').classList.remove('visible');
 });
